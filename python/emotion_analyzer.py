@@ -83,7 +83,7 @@ def send_message_to_arduino(emotion_category: str, face_position: str) -> bytes:
         return None
 
 
-def connect_to_arduino(port: str = "/dev/cu.usbserial-021FEEA5",
+def connect_to_arduino(port: str = "",
                        baudrate: int = 9600,
                        timeout: float = 2.0) -> serial.Serial:
     """
